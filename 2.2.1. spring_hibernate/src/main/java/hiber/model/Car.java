@@ -5,9 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cars")
 public class Car {
-    @Column
+    @Column(name = "series")
     private int series;
-    @Column
+    @Column(name = "model")
     private String model;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
